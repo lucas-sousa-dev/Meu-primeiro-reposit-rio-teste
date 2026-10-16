@@ -139,3 +139,59 @@ footer {
         font-size: 16px;
     }
 }
+
+
+
+/* Menu de navegacao */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.menu a {
+    color: #94c5ff;
+    background-color: #233e65;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Botoes da apresentacao */
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.botao.principal {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.botao.secundario {
+    border: 1px solid #94c5ff;
+    color: #94c5ff;
+}
+
+.botao:hover {
+    background-color: #2563eb;
+    color: white;
+}

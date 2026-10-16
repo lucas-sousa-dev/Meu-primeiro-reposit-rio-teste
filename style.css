@@ -1,6 +1,11 @@
 
+/* Configuracoes gerais */
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,32 +15,65 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Conteudo principal */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Apresentacao inicial */
+header {
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(
+        135deg, #142239, #233e65
+    );
+    border-radius: 18px;
 }
 
 h1 {
     color: #ffffff;
-    font-size: 42px;
+    font-size: 48px;
+    margin: 0 0 15px;
 }
 
+header h2 {
+    color: #94c5ff;
+    font-size: 24px;
+}
+
+/* Titulos */
 h2 {
     color: #94c5ff;
-    font-size: 26px;
+    font-size: 27px;
+    margin-top: 0;
 }
 
 h3 {
-    color: #94c5ff;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
+/* Textos */
 p {
     color: #d1d9e6;
     font-size: 17px;
     line-height: 1.7;
 }
 
+/* Cartoes das secoes */
+section {
+    background-color: #1c304d;
+    padding: 28px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    border: 1px solid #345174;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Conhecimentos */
 .habilidades {
     display: flex;
     flex-wrap: wrap;
@@ -45,19 +83,59 @@ p {
 }
 
 .habilidades li {
-    background-color: #253e61;
+    background-color: #2b4b74;
+    color: #ffffff;
     padding: 10px 16px;
     border-radius: 8px;
-    color: white;
 }
 
+/* Links */
+a {
+    color: #94c5ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid #94c5ff;
+    outline-offset: 4px;
+}
+
+/* Rodape */
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    border-top: 1px solid #345174;
+}
+
+/* Adaptacao para celular */
 @media (max-width: 600px) {
     .container {
-        margin: 15px auto;
-        padding: 20px;
+        padding: 15px;
+    }
+
+    header {
+        padding: 35px 20px;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    section {
+        padding: 22px 18px;
+    }
+
+    p {
+        font-size: 16px;
     }
 }
